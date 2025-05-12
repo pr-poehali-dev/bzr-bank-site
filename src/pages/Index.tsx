@@ -1,12 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import HeroSection from '@/components/home/HeroSection';
+import ServicesSection from '@/components/home/ServicesSection';
+import TestimonialsSection from '@/components/home/TestimonialsSection';
+import QrCodeSection from '@/components/home/QrCodeSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <HeroSection />
+        <ServicesSection />
+        <TestimonialsSection />
+        <QrCodeSection />
+      </main>
+      <Footer />
     </div>
   );
 };
